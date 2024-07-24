@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CheeZy Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Selamat Datang di CheeZy Store</h1>
+    </div>
+    <div class="banner">
+      <img src="/images/banner-bg.png" alt="Banner">
+    </div>
+    <nav class="navbar navbar-expand-lg custom_nav-container ">
+      <a class="navbar-brand" href="index.html"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class=""></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="why.html">Why Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonial.html">Testimonial</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="products">
+        <div class="product">
+          <img src="/images/laptop.png" alt="Product">
+          <h2>Laptop Asus ROG Gen 3</h2>
+          <p>Laptop ROG merupakan laptop gaming premium yang dirancang untuk memberikan performa maksimal bagi para gamer. Dilengkapi dengan prosesor Intel Core i7 generasi ke-10 dan kartu grafis NVIDIA GeForce RTX 2070, laptop ini mampu menangani game-game berat dengan mudah.</p>
+          <p>Rp. 15.000.000</p>
+          <button>Tambahkan Ke Keranjang</button>
+        </div>
+
+        <div class="product">
+          <img src="/images/mouse.png" alt="Product">
+          <h2>Mouse Gaming Rexus</h2>
+          <p>Mouse Gaming Rexus dirancang khusus untuk para gamer yang membutuhkan presisi tinggi dan kecepatan dalam bermain game. Dilengkapi dengan sensor optik 8000 DPI dan 7 tombol yang dapat diprogram, mouse ini memberikan kontrol penuh di tangan Anda.</p>
+          <p>Rp. 300.000</p>
+          <button>Tambahkan Ke Keranjang</button>
+        </div>
+        
+        <div class="product">
+          <img src="/images/keyboard.png" alt="Product">
+          <h2>Keyboard Gaming HP</h2>
+          <p>Keyboard gaming ini menawarkan pengalaman mengetik dan bermain game yang superior dengan mechanical blue switch yang memberikan feedback tactile yang jelas. Full N-Key Rollover memastikan setiap keystroke terdaftar dengan akurat. Beli sekarang untuk manjakan jarimu!</p>
+          <p>Rp. 510.000</p>
+          <button>Tambahkan Ke Keranjang</button>
+        </div>
+
+        <div class="product">
+          <img src="/images/fan.png" alt="Product">
+          <h2>Fan Cooler Gaming ROG</h2>
+          <p>Fan Cooler Gaming ini dirancang untuk memberikan pendinginan optimal pada sistem PC Anda. Dengan ukuran 120mm dan kecepatan putaran hingga 1500 RPM, fan ini mampu menghasilkan airflow sebesar 45 CFM yang efektif mengurangi panas.</p>
+          <p>Rp. 120.000</p>
+          <button>Tambahkan Ke Keranjang</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Our CheeZy Store. All rights reserved.</p>
+      <p>+628990080441</p><p>nizarisnaini20@gmail.com</p> <p>Jember, East Java, Indonesia</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        arrows: true, // Tampilkan tombol navigasi
+        prevArrow: '<button type="button" class="slick-prev">&#8592;</button>',
+        nextArrow: '<button type="button" class="slick-next">&#8594;</button>',
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    });
+  </script>
+</body>
+</html>
